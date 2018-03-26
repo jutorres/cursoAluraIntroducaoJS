@@ -160,3 +160,7 @@ button[disabled=disabled], button:disabled {
 .invisivel {
 	display: none;
 }
+
+.importe {
+	color: red;
+}

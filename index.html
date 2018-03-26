@@ -10,6 +10,7 @@
 	<script defer src="js/form.js"></script>
 	<script defer src="js/remove-paciente.js"></script>
 	<script defer src="js/busca.js"></script>
+	<script defer src="js/importar-paciente.js"></script>
 
 </head>
 <body>
@@ -23,7 +24,7 @@
 		<section class="container">
 			<h2>Meus pacientes</h2>
 			<label class="busca" for="filtrar-tabela">Buscar: </label>
-			<input class="busca" type="text" name="filtro" id="filtrar-tabela">
+			<input class="busca" type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do paciente">
 			<table>
 				<thead>
 					<tr>
@@ -75,7 +76,8 @@
 					</tr>
 				</tbody>
 			</table>
-
+			<span id="erro-ajax" class="invisivel importe">Houve um erro no importe</span>
+			<button id="importar-pacientes" class="botao btn-principal">Importar pacientes</button>
 		</section>
 	</main>
 
